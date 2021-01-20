@@ -1,5 +1,9 @@
 import React from 'react'
 import Navbar from './Navbar'
+import Header from './Header'
+import Banner from './Banner'
+import '../assets/styles/App.css'
+import '../assets/styles/Responsive.css'
 
 const link = {
     text: 'Admin Dashboard',
@@ -10,6 +14,8 @@ const App = () => {
     return(
         <div>
             <Navbar link={ link }/>
+            <Header />
+            <Banner />
         </div>
     )
 }

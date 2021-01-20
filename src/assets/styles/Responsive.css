@@ -1,0 +1,38 @@
+@media only screen and (max-width: 800px){
+    #pages p {
+        padding: 0 15px;
+        transform: translate(0%);
+    }   
+    #bannerComponent #image {
+        height: 460px;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    #navbar #adminDashboard{
+        display: none;
+    }
+
+    #pages p {
+        padding: 0 10px;
+        transform: translate(-30%);
+        font-size: 11px;
+    }   
+
+    #header #avatar {
+        display: none;
+    }
+
+    #header #pages {
+        margin: auto;
+        transform: translate(18%);
+    }
+
+    #header #progressInfo {
+        display: none;
+    }
+
+    #bannerComponent #image {
+        height: 560px;
+    }
+}   

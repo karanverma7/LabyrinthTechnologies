@@ -1,0 +1,156 @@
+body{
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 0 20px;
+    font-size: 14px;
+    height: 45px;
+}
+
+#navbar #adminDashboard img{
+    height: 10px;
+    cursor: pointer;
+}
+
+#navbar #logo h2 {
+    font-family: Geneva, Tahoma, sans-serif;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.85);;
+    background-color: white;
+    padding: 5px 20px;
+    margin-bottom: 0;
+    font-size: 18px;
+    height: 45px;
+}
+
+#header #avatar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+#pages {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transform: translateY(10%);
+}
+
+#pages p {
+    padding: 0 20px;
+    font-size: 13px;
+    opacity: 70%;
+    padding-bottom: 15px;
+    cursor: pointer;
+}
+
+#pages p:hover {
+    opacity: 100%;
+    border-bottom: 2px solid rgb(0, 162, 255);
+}
+
+#pages .active {
+    opacity: 100%;
+}
+
+#progressInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 10px;
+}
+
+#progressInfo #publish {
+    padding: 6px 10px;
+    border-radius: 5px;
+    background-color: #e7e7e7;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#progressInfo #publish:hover, #progressInfo img:hover {
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    transform: scale(1.01);
+}
+
+#progressInfo img {
+    height: 11px;
+    border: 1px solid #A7A7A7;
+    border-radius: 5px;
+    padding: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+#bannerComponent {
+    position: relative;
+}
+
+#bannerComponent #controls {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+}
+
+#bannerComponent #controls img {
+    height: 25px;
+    opacity: 75%;
+    border-radius: 5px;
+    padding: 100px 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    opacity: 60%;
+}
+
+#bannerComponent #controls img:hover {
+    opacity: 80%;
+}
+
+#bannerComponent #controls #previous {
+    position: absolute;
+    left: 15px;
+}
+
+#bannerComponent #controls #next {
+    position: absolute;
+    right: 15px;
+}
+
+#bannerComponent #image {
+    height: 560px;
+    width: 100%;
+    background-size: cover;
+    background-position: top;
+}
+
+#bannerComponent #tour {
+    position: absolute;
+    right: 40px;
+    bottom: 20px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: 11px;
+    opacity: 80%;
+    cursor: pointer;
+}
+
+#bannerComponent #tour:hover {
+    background-color: rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+}
