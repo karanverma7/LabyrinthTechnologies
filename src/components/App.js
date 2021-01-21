@@ -1,4 +1,5 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
+import axios from 'axios'
 import Navbar from './Navbar'
 import Header from './Header'
 import Banner from './Banner'
@@ -12,13 +13,25 @@ const link = {
 }
 
 const App = () => {
+
+    const [ galleryImages, setGalleryImages ] = useState([])
+
+    const getGalleryImages = async () => {
+        let results = await axios.get('https://picsum.photos/v2/list?limit=5');
+        setGalleryImages(results.data)
+    }
+
+    useEffect( () => {
+        getGalleryImages();
+    }, [])
+
    
     return(
         <div>
             <Navbar link={ link }/>
             <Header />
-            <Banner />
-            <Container />
+            <Banner galleryImages={galleryImages} />
+            <Container galleryImages={galleryImages} />
         </div>
     )
 }
