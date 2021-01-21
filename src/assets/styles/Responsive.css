@@ -2,6 +2,7 @@
     #pages p {
         padding: 0 15px;
         transform: translate(0%);
+        padding-bottom: 15px;
     }   
     #bannerComponent #image {
         height: 460px;
@@ -11,6 +12,9 @@
     }
     #profile {
         width: 260px;
+    }
+    #gallery .galleryImage {
+        width: 420px;
     }
 }
 
@@ -23,6 +27,7 @@
         padding: 0 10px;
         transform: translate(-30%);
         font-size: 11px;
+        padding-bottom: 22px;
     }   
 
     #header #avatar {
@@ -40,5 +45,13 @@
 
     #bannerComponent #image {
         height: 560px;
+    }
+
+    #gallery {
+        width: 340px;
+    }
+
+    #gallery .galleryImage {
+        width: 340px;
     }
 }   
