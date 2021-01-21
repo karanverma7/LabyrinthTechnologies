@@ -12,6 +12,7 @@ const link = {
 }
 
 const App = () => {
+   
     return(
         <div>
             <Navbar link={ link }/>

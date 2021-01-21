@@ -6,6 +6,12 @@
     #bannerComponent #image {
         height: 460px;
     }
+    #gallery {
+        width: 420px;
+    }
+    #profile {
+        width: 260px;
+    }
 }
 
 @media only screen and (max-width: 600px){

@@ -6,6 +6,8 @@ import twitter from '../assets/images/twitter.svg'
 import world from '../assets/images/world.svg'
 import instagram from '../assets/images/instagram.svg'
 import location from '../assets/images/location.svg'
+import movie from '../assets/images/movie.svg'
+import user from '../assets/images/public.svg'
 
 const Profile = () => {
     return(
@@ -17,10 +19,10 @@ const Profile = () => {
                     <img src={USA} style={{ height: '12px', opacity: '85%' }} alt="USA"/>
                     MALIBU | USA
                 </div>
-                <img src={world} style={{ height: '18px' }} alt="world"/>
-                <img src={instagram} style={{ height: '18px' }} alt="instagram"/>
-                <img src={FB} style={{ height: '18px' }} alt="facebook"/>
-                <img src={twitter} style={{ height: '18px' }} alt="twitter"/>
+                <img src={world} alt="world"/>
+                <img src={instagram} alt="instagram"/>
+                <img src={FB} alt="facebook"/>
+                <img src={twitter} alt="twitter"/>
             </div>
             <div id="description">
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -71,7 +73,8 @@ const Profile = () => {
                         <h4>Fred Segal Cafe</h4>
                         <h5>Malibu, United States</h5>
                         <p>DEPARTMENTAL STORE</p>
-                        <span className="tags">Men's Fashion</span> <span className="tags">Women's Fashion</span>
+                        <span className="tags">Men's Fashion</span>
+                        <span className="tags">Interiors</span>
                     </div>
                 </div>
             </div>
@@ -80,9 +83,29 @@ const Profile = () => {
                     <p>BRANDS</p>
                     <button>Edit</button>
                 </div>
-                <div className="brand">
+                <div className="locations">
+                    <img src={movie} style={{ height: '18px' }} alt="location"/>
+                    <div>
+                        <h4>Movitra</h4>
+                        <h5>Milan, Italy</h5>
+                        <span className="tags">Eyewear</span>
+                        <div className="links">
+                            <img src={world} alt="world"/>
+                            <img src={instagram} alt="instagram"/>
+                        </div>
+                    </div>
                 </div>
-                <div className="brand">
+                <div className="locations">
+                    <img src={user} style={{ height: '18px' }} alt="location"/>
+                    <div>
+                        <h4>Movitra</h4>
+                        <h5>Milan, Italy</h5>
+                        <span className="tags">Eyewear</span>
+                        <div className="links">
+                            <img src={world} alt="world"/>
+                            <img src={instagram} alt="instagram"/>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
