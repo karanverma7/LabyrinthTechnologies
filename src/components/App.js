@@ -2,6 +2,7 @@ import React from 'react'
 import Navbar from './Navbar'
 import Header from './Header'
 import Banner from './Banner'
+import Container from './Container'
 import '../assets/styles/App.css'
 import '../assets/styles/Responsive.css'
 
@@ -16,6 +17,7 @@ const App = () => {
             <Navbar link={ link }/>
             <Header />
             <Banner />
+            <Container />
         </div>
     )
 }
