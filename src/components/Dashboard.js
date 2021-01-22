@@ -35,7 +35,7 @@ const Dashboard = ({covidData}) => {
                 </div>
             </div>
             <div id="overview">
-                <h3>OVERVIEW</h3>
+                <h3>Worldwide Overview:</h3>
                 <div id="stats">
                     <div id="infected" className="card">
                         <p>Infected</p>
