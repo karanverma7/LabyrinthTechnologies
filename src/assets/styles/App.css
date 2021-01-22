@@ -369,7 +369,6 @@ body{
 #dashboard {
     padding-top: 40px;
     background-color: #e4e4e4;
-    height: 100vh;
     display: flex;
     justify-content: flex-start;
     color: rgb(66, 66, 66);
@@ -410,6 +409,79 @@ body{
     background-color: rgba(0, 128, 128, 0.164);
     box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.35);
     color: teal;
+}
+
+#dashboard #overview {
+    padding: 20px 70px;
+}
+#dashboard #stats {
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#dashboard #stats .card {
+    margin-top: 20px;
+    width: 170px;
+    padding: 35px 0;
+    text-align: center;
+    border-radius: 15px;
+}
+
+#dashboard #stats #infected {
+    color: rgb(218, 0, 0);
+    background-color: rgb(218, 0, 0, 0.1);
+    border: 1px solid rgb(218, 0, 0, 0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#dashboard #stats #recovered {
+    color: rgb(0, 121, 0);
+    background-color: rgb(0, 121, 0, 0.1);
+    border: 1px solid rgb(0, 121, 0, 0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#dashboard #stats #deceased {
+    color: rgb(66, 66, 66);
+    background-color: rgba(0, 0, 0, 0.1);
+    border: 1px solid rgb(0, 0, 0, 0.2);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#dashboard #stats p {
+    font-size: 18px;
+    font-weight: 550;
+}
+
+#dashboard #stats h4 {
+    font-size: 22px;
+}
+
+#dashboard #table #heading, #dashboard #table .countryDetails {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#dashboard #table #heading {
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    padding-left: 60px;
+    font-size: 18px;
+    font-weight: 550;
+    border-radius: 10px;
+}
+
+#dashboard #table p {
+    width: 130px;
+}
+
+#dashboard #table .countryDetails {
+    padding-left: 60px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 17px;
+    line-height: 5px;
 }
 
 

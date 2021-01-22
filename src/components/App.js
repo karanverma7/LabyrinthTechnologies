@@ -12,14 +12,21 @@ import '../assets/styles/Responsive.css'
 const App = () => {
 
     const [ galleryImages, setGalleryImages ] = useState([])
+    const [ covidData, setCovidData ] = useState([])
 
     const getGalleryImages = async () => {
         let results = await axios.get('https://picsum.photos/v2/list?limit=5');
         setGalleryImages(results.data)
     }
 
+    const getCovidData = async () => {
+        let results = await axios.get("https://api.apify.com/v2/key-value-stores/tVaYRsPHLjNdNBu7S/records/LATEST?disableRedirect=true")
+        setCovidData(results.data)
+    }
+
     useEffect( () => {
         getGalleryImages();
+        getCovidData();
     }, [])
 
    
@@ -35,7 +42,7 @@ const App = () => {
                     </Route>
                     <Route path="/covid19">
                         <Navbar link={{ text: 'Showcase', link: '/' }}/>
-                        <Dashboard />
+                        <Dashboard covidData={covidData}/>
                     </Route>
                 </Switch>
             </Router>
@@ -45,5 +52,5 @@ const App = () => {
 
 export default App;
 
-//https://api.apify.com/v2/key-value-stores/tVaYRsPHLjNdNBu7S/records/LATEST?disableRedirect=true
+// https://api.apify.com/v2/key-value-stores/tVaYRsPHLjNdNBu7S/records/LATEST?disableRedirect=true
 //https://picsum.photos/v2/list
