@@ -367,7 +367,52 @@ body{
 }
 
 #dashboard {
-    padding-top: 50px;
+    padding-top: 40px;
     background-color: #e4e4e4;
     height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    color: rgb(66, 66, 66);
 }
+
+#dashboard #navigation {
+    background-color: white;
+    text-align: center;
+    width: 180px;
+    padding-top: 15px;
+    box-shadow: 3px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+#dashboard #navigation h3 {
+    color: teal;
+    margin-top: -10px;
+}
+
+#dashboard #navigation #tabs {
+    padding-top: 5px;
+}
+
+#dashboard #navigation #tabs p {
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: 550;
+    transition: all 0.2s ease-in-out;  
+}
+
+#dashboard #navigation #tabs p:hover {
+    background-color: rgba(0, 128, 128, 0.164);
+    color: teal;
+    cursor: pointer;
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.35);
+}
+
+#dashboard #navigation #tabs .active {
+    background-color: rgba(0, 128, 128, 0.164);
+    box-shadow: 0px 3px 4px rgba(0, 0, 0, 0.35);
+    color: teal;
+}
+
+
+
+
+

@@ -6,15 +6,8 @@ import Header from './Header'
 import Carousel from './Carousel'
 import Container from './Container'
 import Dashboard from './Dashboard'
-import back from '../assets/images/back.svg'
 import '../assets/styles/App.css'
 import '../assets/styles/Responsive.css'
-
-const link = {
-    icon: back,
-    text: 'Admin Dashboard',
-    link: ''
-}
 
 const App = () => {
 
@@ -35,13 +28,13 @@ const App = () => {
             <Router>
                 <Switch>
                     <Route path="/" exact>
-                        <Navbar link={ link }/>
+                        <Navbar link={{ text: 'Admin Dashboard', link: '/covid19' }}/>
                         <Header />
                         <Carousel carouselImages={galleryImages} />
                         <Container galleryImages={galleryImages} />
                     </Route>
                     <Route path="/covid19">
-                        <Navbar link={ [] }/>
+                        <Navbar link={{ text: 'Showcase', link: '/' }}/>
                         <Dashboard />
                     </Route>
                 </Switch>

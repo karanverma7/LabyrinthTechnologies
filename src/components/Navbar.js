@@ -2,15 +2,15 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 import upLogo from '../assets/images/upLogo.svg'
 import User from '../assets/images/User.svg'
+import back from '../assets/images/back.svg'
 import dropdown from '../assets/images/dropdown.svg'
 
 const Navbar = ({ link }) => {
     return(
         <div id="navbar">
             <div id="adminDashboard">
-                <Link to="/covid19">
-                    { link.length !== 0 ? <img src={link.icon} alt="back-navigation"/> : null}
-                    &nbsp;&nbsp;{ link.text }
+                <Link to={link.link}>
+                    <img src={back} alt="back-navigation"/>&nbsp;&nbsp;{ link.text }
                 </Link>
             </div>
             <div id="logo">
