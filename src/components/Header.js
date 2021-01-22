@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import Fred from '../assets/images/Fred.svg'
 import dropdownGrey from '../assets/images/dropdownGrey.svg'
 import settings from '../assets/images/settings.svg'
@@ -12,7 +13,7 @@ const Header = () => {
                 <img src={dropdownGrey} style={{ height: '10px', marginLeft: '20px' }} alt="dropdown"/>
             </div>
             <div id="pages">
-                <p>DASHBOARD</p>
+                <Link to="/covid19"><p>DASHBOARD</p></Link>
                 <p className="active">SHOWCASE</p>
             </div>
             <div id="progressInfo">

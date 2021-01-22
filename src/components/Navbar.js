@@ -1,5 +1,5 @@
 import React from 'react'
-import back from '../assets/images/back.svg'
+import {Link} from 'react-router-dom'
 import upLogo from '../assets/images/upLogo.svg'
 import User from '../assets/images/User.svg'
 import dropdown from '../assets/images/dropdown.svg'
@@ -8,14 +8,19 @@ const Navbar = ({ link }) => {
     return(
         <div id="navbar">
             <div id="adminDashboard">
-                <img src={back} alt="back-navigation"/>&nbsp;&nbsp;{ link.text }
+                <Link to="/covid19">
+                    { link.length !== 0 ? <img src={link.icon} alt="back-navigation"/> : null}
+                    &nbsp;&nbsp;{ link.text }
+                </Link>
             </div>
             <div id="logo">
-                <h2>BORN 
-                    <img src={upLogo} style={{ height: '5px'}} alt="logo"/>
-                </h2>
+                <Link to="/">
+                    <h2>BORN 
+                        <img src={upLogo} style={{ height: '5px'}} alt="logo"/>
+                    </h2>
+                </Link>
             </div>
-            <div>
+            <div id="userInfo">
                 <p>
                     <img src={User} style={{ height: '12px', cursor: 'pointer', marginRight: '8px'}} alt="User"/>
                     Brendan W.

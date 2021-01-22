@@ -1,13 +1,17 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
+import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Navbar from './Navbar'
 import Header from './Header'
 import Carousel from './Carousel'
 import Container from './Container'
+import Dashboard from './Dashboard'
+import back from '../assets/images/back.svg'
 import '../assets/styles/App.css'
 import '../assets/styles/Responsive.css'
 
 const link = {
+    icon: back,
     text: 'Admin Dashboard',
     link: ''
 }
@@ -28,10 +32,20 @@ const App = () => {
    
     return(
         <div>
-            <Navbar link={ link }/>
-            <Header />
-            <Carousel carouselImages={galleryImages} />
-            <Container galleryImages={galleryImages} />
+            <Router>
+                <Switch>
+                    <Route path="/" exact>
+                        <Navbar link={ link }/>
+                        <Header />
+                        <Carousel carouselImages={galleryImages} />
+                        <Container galleryImages={galleryImages} />
+                    </Route>
+                    <Route path="/covid19">
+                        <Navbar link={ [] }/>
+                        <Dashboard />
+                    </Route>
+                </Switch>
+            </Router>
         </div>
     )
 }

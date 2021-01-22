@@ -23,6 +23,10 @@
         display: none;
     }
 
+    #navbar #logo {
+        padding-left: 15px;
+    }
+
     #pages p {
         padding: 0 10px;
         transform: translate(-30%);
