@@ -139,7 +139,7 @@ body{
     height: 560px;
     min-width: 100vw;
     background-size: cover;
-    background-position: top;
+    background-position: left;
     overflow: hidden;
 }
 

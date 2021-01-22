@@ -2,12 +2,12 @@ import React, { useRef } from 'react'
 import previous from '../assets/images/back.svg'
 import next from '../assets/images/next.svg'
 
-const Banner = ({ galleryImages }) => {
+const Carousel = ({ carouselImages }) => {
 
     const bannerImagesRef = useRef()
     let i = 1;
 
-    let bannerImages = galleryImages.map( image => {
+    let bannerImages = carouselImages.map( image => {
         return(
             <div id="image" key={image.id} style={{ backgroundImage: `url(${image.download_url})`}}></div>
         )
@@ -41,4 +41,4 @@ const Banner = ({ galleryImages }) => {
     )
 }
 
-export default Banner;
+export default Carousel;

@@ -7,7 +7,7 @@ const Gallery = ({ galleryImages }) => {
     const [ active, setActive ] = useState([])
 
     const getInstagramGallery = async () => {
-        let results = await axios.get('https://picsum.photos/v2/list?page=2&limit=5');
+        let results = await axios.get('https://picsum.photos/v2/list?page=4&limit=5');
         setInstagramGallery(results.data)
     }
 

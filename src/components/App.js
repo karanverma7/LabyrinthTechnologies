@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import Navbar from './Navbar'
 import Header from './Header'
-import Banner from './Banner'
+import Carousel from './Carousel'
 import Container from './Container'
 import '../assets/styles/App.css'
 import '../assets/styles/Responsive.css'
@@ -30,7 +30,7 @@ const App = () => {
         <div>
             <Navbar link={ link }/>
             <Header />
-            <Banner galleryImages={galleryImages} />
+            <Carousel carouselImages={galleryImages} />
             <Container galleryImages={galleryImages} />
         </div>
     )
